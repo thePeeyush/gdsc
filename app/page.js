@@ -17,8 +17,8 @@ export default function Home() {
       <div className={`${dosis.className} w-full overflow-y-scroll`}>
         <Head/>
         <Links/>
-        <Upcoming/>
         <Events/>
+        <Upcoming/>
         <Teams/>
         <Organizers/>
         <About/>

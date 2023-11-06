@@ -3,14 +3,16 @@ import React from 'react'
 
 const Head = () => {
   return (
-    <div className="flex flex-row gap-10 md:min-h-[550px] w-full items-center justify-center relative">
+    <div className="flex flex-col md:flex-row md:gap-10 md:min-h-[75vh] w-full items-center justify-center relative ">
         <div className='dark:text-neutral-200 p-10 my-4 flex flex-col gap-6'>
-        <h1 className='font-semibold text-3xl lg:text-6xl'>GDSC</h1>
-        <h2 className=' bg-blue-700 p-2 text-center rounded-md text-lg lg:text-3xl text-neutral-200 max-w-md'>Institute of Engineering, <span className=''>DAVV, Indore</span></h2>
-        <div className='absolute right-0 top-0 -z-20 opacity-60'><GridOfDots/></div>
+        <h1 className='font-semibold text-3xl lg:text-6xl z-20'>GDSC</h1>
+        <h2 className=' bg-blue-700 p-2 text-center rounded-md text-lg lg:text-3xl text-neutral-200 max-w-md z-20'>Institute of Engineering, <span className=''>DAVV, Indore</span></h2>
+        <h3 className='max-w-md hidden md:inline-block text-md z-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque perspiciatis, odio esse eveniet eligendi nihil, non, necessitatibus soluta suscipit sequi voluptatem enim laboriosam est. Cum sapiente voluptatum et voluptas molestias?</h3>
+        <div className='absolute right-0 top-0 opacity-60 z-0'><GridOfDots/></div>
     </div>
-    <Image src="/gdsc-banner.png" alt='banner' width={500} height={500} className='w-80 h-fit hidden md:inline-block'/>
-    <div className='absolute left-0 -bottom-20 -z-20 opacity-60 hidden md:inline-block'><GridOfDots/></div>
+    <h3 className='max-w-md md:hidden p-6 z-20'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque perspiciatis, odio esse eveniet eligendi nihil, non, necessitatibus soluta suscipit sequi voluptatem enim laboriosam est. Cum sapiente voluptatum et voluptas molestias?</h3>
+    <Image src="/gdsc-banner.png" alt='banner' width={500} height={500} className='w-80 h-fit hidden md:inline-block z-20'/>
+    <div className='absolute -left-14 -bottom-28 opacity-60 hidden md:inline-block z-0'><GridOfDots/></div>
     </div>
   )
 }

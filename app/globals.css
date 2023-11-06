@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
- @apply text-neutral-600 dark:text-neutral-400 dark:bg-neutral-800
+ @apply text-neutral-600 dark:text-neutral-300 dark:bg-gradient-to-tr from-black via-gray-700 to-slate-900
 }
